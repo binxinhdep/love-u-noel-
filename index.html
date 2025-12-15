@@ -66,13 +66,16 @@
 <body>
     <div id="error-log"></div>
     
+    <!-- UI Vandiep -->
     <div id="ui-layer">
+        <!-- Vandiep -->
         <div class="guide">
             🖐 <b>Open:</b> Explode &nbsp;|&nbsp; 🫶 <b>Heart:</b> Love &nbsp;|&nbsp; ✊ <b>Fist:</b> Tree
         </div>
         <button id="btnStart" onclick="startSystem()">START MAGIC</button>
     </div>
 
+    <!-- Vandiep -->
     <div id="copyright">© by vandiep</div>
 
     <div id="canvas-container"></div>
@@ -88,18 +91,7 @@
         bgMusic.loop = true; bgMusic.volume = 1.0;
 
         const loader = new THREE.TextureLoader();
-        
-        // ** PHẦN ĐÃ SỬA: ĐƯỜNG DẪN TUYỆT ĐỐI CHO GITHUB PAGES **
-        // Lần sửa cuối cùng này đảm bảo đường dẫn tuyệt đối với chữ thường.
-        const photoFiles = [
-            '/love-u-noel-/image1.jpeg', 
-            '/love-u-noel-/image2.jpeg',
-            '/love-u-noel-/image3.jpeg',
-            '/love-u-noel-/image4.jpeg',
-            '/love-u-noel-/image5.jpeg'
-        ];
-        // ** KẾT THÚC PHẦN ĐÃ SỬA **
-
+        const photoFiles = ['./image1.jpeg', './image2.jpeg', './image3.jpeg', './image4.jpeg', './image5.jpeg'];
         const photoTextures = [];
         photoFiles.forEach((f, i) => photoTextures[i] = loader.load(f));
 
